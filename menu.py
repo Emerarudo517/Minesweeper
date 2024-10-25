@@ -18,7 +18,7 @@ def show_menu(master):
     title = tk.Label(master, text="Minesweeper", font=("Helvetica", 24), bg="#ffffff")
     canvas.create_window(344, 50, window=title)
     
-    subtitle = tk.Label(master, text="©️:Nhóm 16", font=("Helvetica", 12), bg="#ffffff")
+    subtitle = tk.Label(master, text="Thực hiện: Nhóm 16", font=("Helvetica", 12), bg="#ffffff")
     canvas.create_window(344, 90, window=subtitle)
     
     play_button = tk.Button(master, text="Chơi thôi", command=lambda: show_difficulty_selection(master))
@@ -41,7 +41,7 @@ def show_difficulty_selection(master):
     bg_image = tk.PhotoImage(file="Background.png")
     canvas.create_image(0, 0, anchor="nw", image=bg_image)
     
-    title = tk.Label(master, text="Select Difficulty", font=("Helvetica", 18), bg="#ffffff")
+    title = tk.Label(master, text="Chọn độ khó", font=("Helvetica", 18), bg="#ffffff")
     canvas.create_window(344, 50, window=title)
     
     easy_button = tk.Button(master, text="Dễ", command=lambda: start_game(master, size=6, mines=6))
